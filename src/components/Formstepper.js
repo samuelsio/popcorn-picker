@@ -19,7 +19,7 @@ export default class Formstepper extends Component {
     }
 
     getRequest = () => {
-        return 'https://apis.justwatch.com/content/titles/en_GB/popular?body={"age_certifications":[],"content_types":["' + this.state.contentType + '"],"genres":["' + this.state.genres.map(genre => (genre.value >= 2 ? genre.value + ',' : genre.value)) + '"],"languages":null,"min_price":null,"matching_offers_only":null,"max_price":null,"monetization_types":[],"presentation_types":[],"providers":["' + this.state.providers.toString() + '"],"release_year_from":null,"release_year_until":null,"scoring_filter_types":null,"timeline_type":null,"sort_by":null,"sort_asc":null,"page":1,"page_size":30}'
+        return 'https://cors-anywhere.herokuapp.com/https://apis.justwatch.com/content/titles/en_GB/popular?body={"age_certifications":[],"content_types":["' + this.state.contentType + '"],"genres":["' + this.state.genres.map(genre => (genre.value >= 2 ? genre.value + ',' : genre.value)) + '"],"languages":null,"min_price":null,"matching_offers_only":null,"max_price":null,"monetization_types":[],"presentation_types":[],"providers":["' + this.state.providers.toString() + '"],"release_year_from":null,"release_year_until":null,"scoring_filter_types":null,"timeline_type":null,"sort_by":null,"sort_asc":null,"page":1,"page_size":30}'
     }
 
     nextStep = () => {

@@ -10,16 +10,10 @@ export default class Results extends Component {
     };
 
     componentDidMount() {
-        const h = new Headers();
-        h.append('X-Requested-With', 'XMLHttpRequest');
-
-        let req = new Request(this.props.request(), {
-            method: 'GET',
-            headers: h,
-            mode: 'cors'
-        });
-
-        fetch(req)
+        fetch(this.props.request(), {
+                method: 'post',
+                headers: new Headers({ 'X-Requested-With': 'XMLHttpRequest' })
+            })
         .then(res => res.json())
         .then(json => {
             this.setState({
