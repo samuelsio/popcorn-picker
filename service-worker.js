@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/popcorn-picker/precache-manifest.69afc55276d2a75b8548c5feef331fe2.js"
+  "/popcorn-picker/precache-manifest.faa8ba3520141539626e13acb8f9493d.js"
 );
 
 self.addEventListener('message', (event) => {
