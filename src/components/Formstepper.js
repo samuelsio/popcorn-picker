@@ -15,10 +15,11 @@ export default class Formstepper extends Component {
         currentStep: 1,
         providers: [],
         genres: [],
+        contentType: ""
     }
 
     getRequest = () => {
-        return 'https://apis.justwatch.com/content/titles/en_GB/popular?body={"age_certifications":[],"content_types":[],"genres":["' + this.state.genres.map(genre => (genre.value + ',')) + '"],"languages":null,"min_price":null,"matching_offers_only":null,"max_price":null,"monetization_types":[],"presentation_types":[],"providers":["' + this.state.providers.toString() + '"],"release_year_from":null,"release_year_until":null,"scoring_filter_types":null,"timeline_type":null,"sort_by":null,"sort_asc":null,"page":1,"page_size":30}'
+        return 'https://apis.justwatch.com/content/titles/en_GB/popular?body={"age_certifications":[],"content_types":["' + this.state.contentType + '"],"genres":["' + this.state.genres.map(genre => (genre.value >= 2 ? genre.value + ',' : genre.value)) + '"],"languages":null,"min_price":null,"matching_offers_only":null,"max_price":null,"monetization_types":[],"presentation_types":[],"providers":["' + this.state.providers.toString() + '"],"release_year_from":null,"release_year_until":null,"scoring_filter_types":null,"timeline_type":null,"sort_by":null,"sort_asc":null,"page":1,"page_size":30}'
     }
 
     nextStep = () => {
@@ -33,6 +34,10 @@ export default class Formstepper extends Component {
         this.setState({
             currentStep: currentStep - 1,
         });
+    }
+
+    setContType = (input) => {
+        this.setState({ contentType: input})
     }
 
     handleChange = input => e => {
@@ -75,7 +80,7 @@ export default class Formstepper extends Component {
                 return (
                     <div>
                     <ProgressBar style={{ marginTop: "2em", borderBottomLeftRadius: 0, borderBottomRightRadius: 0, backgroundColor: "#d9dde1" }} now={this.state.currentStep / this.state.totalSteps * 100} />  
-                        <Step1 nextStep={this.nextStep} handleChange={this.handleChange} values={values} />
+                        <Step1 nextStep={this.nextStep} handleChange={this.handleChange} setContType={this.setContType} contentType={this.state.contentType} />
                     </div>
                 )
             case 2:

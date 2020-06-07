@@ -51,9 +51,11 @@ export default class Step2 extends Component {
                             <Col xs={6} s={4} md={2}>
                                 <Card
                                     key={platform.id}
-                                    className={"provider mb-4 " + (this.props.providers.includes(platform.short_name) ? "selected" : null )}
+                                    className={"provider mb-4 " + (this.props.providers.includes(platform.short_name) ? "selected" : null)}
                                     onClick={() => { this.props.onToggleArray(platform.short_name) }}
-                                    style={{cursor: "pointer"}}
+                                    onKeyPress={(e) => { if (e.charCode === 32) { e.preventDefault(); this.props.onToggleArray(platform.short_name) }}}
+                                    style={{ cursor: "pointer" }}
+                                    tabIndex={0}
                                 >
                                     <FontAwesomeIcon className={"fa-selected"} icon={faCheck} />
                                     <Card.Img
