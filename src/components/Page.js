@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Col, Row, Button, ProgressBar } from 'react-bootstrap';
+import { Card, Col, Row, Button } from 'react-bootstrap';
 import popcornPic from '../images/popcorn-picker.png';
 import Formstepper from './Formstepper';
 
@@ -9,11 +9,11 @@ export default class Search extends Component {
     render() {
         return (
             <>
-                <Row>
-                    <Col xs={3} className="mt-4"><img src={popcornPic} alt="Popcorn Picker" style={{ width: '100%' }}/></Col>
-                    <Col xs={9} style={{justifyContent: 'center', display: 'flex', flexDirection: 'column'}}>
-                    <h1 style={{ color: '#fff', marginTop: '1em', fontSize: '3em' }}>What should I watch?</h1>
-                    <p style={{color: '#fff', fontSize: '1.25em'}}>Tell us what you like watching and we'll find something new that you'll like.</p>
+                <Row className="flex-column flex-md-row">
+                    <Col xs={6} md={3} className="mt-4 align-self-center"><img src={popcornPic} alt="Popcorn Picker" style={{ width: '100%' }}/></Col>
+                    <Col xs={12} md={9} style={{justifyContent: 'center', display: 'flex', flexDirection: 'column'}}>
+                    <h1 style={{ color: '#fff', margin: '0.6em 0', fontSize: '2.5em' }}>Netflix? <span style={{fontFamily: "Yesteryear, sans-serif", whiteSpace: "nowrap"}}>Completed it mate</span></h1>
+                    <p style={{color: '#fff'}}>Get a tailored watch list based on what you're actually subscribed to</p>
                     </Col>
                 </Row>
 

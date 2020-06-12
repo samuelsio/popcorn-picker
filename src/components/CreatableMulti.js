@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import CreatableSelect from 'react-select/creatable';
-import { colourOptions } from './data/multiSelectData';
 
 export default class CreatableMulti extends Component {
 
@@ -14,7 +13,8 @@ export default class CreatableMulti extends Component {
         isMulti
         options={this.props.options}
         onChange={this.props.handleInputChange}
-        value={this.props.value}
+          value={this.props.value}
+          placeholder={this.props.placeholder}
         />
       </>
     );

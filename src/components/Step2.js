@@ -1,18 +1,11 @@
 import React, { Component } from 'react';
-import { Row, Col, Card, Button, Jumbotron, Form } from 'react-bootstrap';
-import CreatableMulti from './CreatableMulti';
+import { Row, Col, Card, Button, Jumbotron } from 'react-bootstrap';
 import { providerData } from './data/searchData';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 export default class Step2 extends Component {
-
-    /*constructor(props) {
-        super(props);
-        this.onToggleArray.add = this.onToggleArray.bind(this)
-    }
-    }*/
 
     state = {
         toggledProviders: []
@@ -42,16 +35,15 @@ export default class Step2 extends Component {
             <>
 
                 <Jumbotron style={{ borderTopLeftRadius: 0, borderTopRightRadius: 0 }}>
-                <h1>Which platforms do you have access to?</h1>
-                    <p>Or you could just choose one</p>
+                    <h3>What are you subscribed to?</h3>
                     
-                    <Row>
+                    <Row className="mb-5">
                         {providerData.map(platform => (
 
-                            <Col xs={6} s={4} md={2}>
+                            <Col xs={3} md={2} className="p-1">
                                 <Card
                                     key={platform.id}
-                                    className={"provider mb-4 " + (this.props.providers.includes(platform.short_name) ? "selected" : null)}
+                                    className={"provider " + (this.props.providers.includes(platform.short_name) ? "selected" : null)}
                                     onClick={() => { this.props.onToggleArray(platform.short_name) }}
                                     onKeyPress={(e) => { if (e.charCode === 32) { e.preventDefault(); this.props.onToggleArray(platform.short_name) }}}
                                     style={{ cursor: "pointer" }}
@@ -63,22 +55,15 @@ export default class Step2 extends Component {
                                         src={`https://images.justwatch.com${ platform.icon_url.slice(0, platform.icon_url.length - 9) }s100 `}
                                     />
                                     
-                                            </Card>
-                                        </Col>
-                            
-                            
-                            /*<div key={platform.id}>
-                                <img className="provider" alt="" src={`https://images.justwatch.com${ platform.icon_url.slice(0, platform.icon_url.length - 9) }s100 `} />
-                                <button onClick={() => { this.props.onToggleArray(platform.short_name) }}>hello</button>
-                                <p>{platform.clear_name}</p>
-                            </div>*/
+                                </Card>
+                            </Col>
                         ))}
                     </Row>
                     
-                <p>
-                        <Button onClick={ this.continue } variant="primary" className="float-right">Next</Button>    
-                        <Button onClick={this.back} variant="primary" className="float-left">Back</Button>
-                </p>
+                    <p>
+                        <Button onClick={ this.continue } variant="primary" className="float-right px-5">Next</Button>    
+                        <Button onClick={this.back} variant="primary" className="float-left px-5">Back</Button>
+                    </p>
                 </Jumbotron>
             </>
         )

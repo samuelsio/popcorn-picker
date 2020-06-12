@@ -5,6 +5,8 @@
 }
 *************** debug *******************/
 
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear');
+
 #root {
     background-image: url(./images/bg.jpg);
     background-size: contain;
@@ -89,4 +91,18 @@
   background: #007bffa8;
   padding: 30px;
   display: block;
+}
+
+.result .card-body {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.step1 .card {
+    min-height: 10rem;
+}
+
+.step1 .card:first-child {
+    margin-right: 10px;
 }

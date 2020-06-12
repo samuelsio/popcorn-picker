@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Button, Jumbotron, Form } from 'react-bootstrap';
 import CreatableMulti from './CreatableMulti';
 import { genreData } from './data/searchData';
-import axios from 'axios';
 
 export default class Step3 extends Component {
 
@@ -40,11 +39,11 @@ export default class Step3 extends Component {
             <>
 
                 <Jumbotron style={{ borderTopLeftRadius: 0, borderTopRightRadius: 0 }}>
-                <h1>Now, whare your favourite genre's</h1>
+                <h1>Now, what's your favourite genre's</h1>
                     <p>For example crime, drama and thrillers</p>
                     
                     <Form.Group>
-                        <CreatableMulti handleOnChange={this.handleOnChange} options={genreData.map(genre => ({ value:  genre.short_name , label:  genre.translation  }))} value={this.props.value} handleInputChange={this.props.handleStep3InputChange} />
+                        <CreatableMulti handleOnChange={this.handleOnChange} placeholder={"Search..."} options={genreData.map(genre => ({ value:  genre.short_name , label:  genre.translation  }))} value={this.props.value} handleInputChange={this.props.handleStep3InputChange} />
                     </Form.Group>
                 <p>
                         <Button onClick={ this.continue } variant="primary" className="float-right">Finish</Button>    

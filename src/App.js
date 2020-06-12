@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import Search from './components/Search';
 import Menu from './components/Menu';
 import Page from './components/Page';
 import { Container } from 'react-bootstrap';

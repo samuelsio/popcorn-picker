@@ -27,6 +27,10 @@ export default class Results extends Component {
                 items: [json]
             })
         })
+            .then( this.state.items.items > 1 ? console.log("success" + this.state.items.length) : console.log("failed" + this.state.items.length))
+        .catch((error) => {
+        console.error('Error:', error);
+        });
     }
 
     render() {
@@ -36,9 +40,9 @@ export default class Results extends Component {
         if (!isLoaded) {
             return (
                 <>
-                    <div class="mt-5" style={{ textAlign: 'center' }}>
+                    <div className="mt-5" style={{ textAlign: 'center' }}>
                         <Spinner animation="border" variant="primary" />
-                        <h2>Loading</h2>
+                        <h2>Loading...</h2>
                     </div>
                 </>
 
@@ -51,23 +55,12 @@ export default class Results extends Component {
                     <Row> 
                         {items[0].items.map(item => (
                             <>  
-                                
-                                
-                                        <Col xs={12} s={6} md={4}>
-                                            <Card className="result mb-4">
-                                                <Card.Img variant="top" src={"https://images.justwatch.com" + item.poster.slice(0, item.poster.length - 9) + "s592"} />
-                                                <Card.Body>
-                                                    <Card.Title>{item.title}</Card.Title>
-                                                        {/*<Card.Text style={{WebkitLineClamp: '3', WebkitBoxOrient: 'vertical', overflow: 'hidden', display:' -webkit-box'}}>{result.overview}</Card.Text>*/}
-                                                </Card.Body>
-                                            </Card>
-                                        </Col>
-                                
-
-
-                                <div style={{display: 'flex', flexWrap: 'wrap' }} className="resultsContainer">
-                                    
-                                </div>
+                                <Col xs={4} className="px-0" key={item.id}>
+                                    <Card className="result mb-3">
+                                        <Card.Img variant="top" src={"https://images.justwatch.com" + item.poster.slice(0, item.poster.length - 9) + "s592"} />
+                                        <Card.Body className="p-2">{item.title}</Card.Body>
+                                    </Card>
+                                </Col>
                             </>
                         ))}
                     </Row>
