@@ -106,3 +106,33 @@
 .step1 .card:first-child {
     margin-right: 10px;
 }
+
+.App .progress {
+  height: 2rem;
+  border-radius: 2rem;
+}
+
+.App .jumbotron {
+  border-radius: 2rem;
+  padding: 1rem 1rem;
+}
+
+.App .btn {
+  border-radius: 2rem;
+  padding: 1rem 0;
+}
+
+.btn-next {
+    order: 2;
+}
+
+.emoji {
+  font-size: 2rem;
+}
+
+.card.selected {
+    transition: 0.2s;
+    box-shadow: none !important;
+    background: #007bff !important;
+    color: #fff !important;
+}

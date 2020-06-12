@@ -60,10 +60,10 @@ export default class Step2 extends Component {
                         ))}
                     </Row>
                     
-                    <p>
-                        <Button onClick={ this.continue } variant="primary" className="float-right px-5">Next</Button>    
-                        <Button onClick={this.back} variant="primary" className="float-left px-5">Back</Button>
-                    </p>
+                    <div class="d-flex flex-grow-1 justify-content-between">
+                        <Button onClick={ this.continue } variant="primary" className="btn btn-next px-5">Next &rsaquo;</Button>    
+                        <Button onClick={this.back} variant="primary" className="btn btn-back float-left px-5">&lsaquo; Back</Button>
+                    </div>
                 </Jumbotron>
             </>
         )
