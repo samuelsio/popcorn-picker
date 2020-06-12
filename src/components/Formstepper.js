@@ -79,7 +79,7 @@ export default class Formstepper extends Component {
             case 1:
                 return (
                     <div>
-                    <ProgressBar style={{ marginTop: "2em", borderBottomLeftRadius: 0, borderBottomRightRadius: 0, backgroundColor: "#d9dde1" }} now={this.state.currentStep / this.state.totalSteps * 100} />  
+                    <ProgressBar style={{ marginTop: "1em", borderBottomLeftRadius: 0, borderBottomRightRadius: 0, backgroundColor: "#d9dde1" }} now={this.state.currentStep / this.state.totalSteps * 100} />  
                         <Step1 nextStep={this.nextStep} handleChange={this.handleChange} setContType={this.setContType} contentType={this.state.contentType} />
                     </div>
                 )

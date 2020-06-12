@@ -34,7 +34,7 @@ export default class Step2 extends Component {
         return (
             <>
 
-                <Jumbotron style={{ borderTopLeftRadius: 0, borderTopRightRadius: 0 }}>
+                <Jumbotron className="step2" style={{ borderTopLeftRadius: 0, borderTopRightRadius: 0 }}>
                     <h3>What are you subscribed to?</h3>
                     
                     <Row className="mb-5">
@@ -52,6 +52,7 @@ export default class Step2 extends Component {
                                     <FontAwesomeIcon className={"fa-selected"} icon={faCheck} />
                                     <Card.Img
                                         variant="top"
+                                        className="provider-img"
                                         src={`https://images.justwatch.com${ platform.icon_url.slice(0, platform.icon_url.length - 9) }s100 `}
                                     />
                                     

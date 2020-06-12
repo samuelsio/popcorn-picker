@@ -14,9 +14,9 @@ export default class Step4 extends Component {
             <>
 
                 <Jumbotron style={{ borderTopLeftRadius: 0, borderTopRightRadius: 0 }}>
-                    <h1>Here's what we've got for you</h1>
+                    <h1>Your results</h1>
                     
-                    <p>Have fun!</p>
+                    <p>Here's a list we've made for you</p>
                     
                 <Results request={this.props.request} />
                     

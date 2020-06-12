@@ -21,10 +21,10 @@ export default class Step2 extends Component {
         return (
             <>
 
-                <Jumbotron style={{ borderTopLeftRadius: 0, borderTopRightRadius: 0 }}>
+                <Jumbotron className="step1" style={{ borderTopLeftRadius: 0, borderTopRightRadius: 0 }}>
                 <h3 className="mb-3">What are you looking for?</h3>
                     
-                    <Row className="step1 mb-5">
+                    <Row className="mb-5">
                         <Col xs={12} className="d-flex flex-row justify-content-center text-center">
                             <Card
                                 onClick={() => { this.props.setContType("movie") }}
