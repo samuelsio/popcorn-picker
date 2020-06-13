@@ -1,27 +1,29 @@
 {
   "files": {
-    "main.css": "/popcorn-picker/static/css/main.e233b2e0.chunk.css",
-    "main.js": "/popcorn-picker/static/js/main.35d0e5bd.chunk.js",
-    "main.js.map": "/popcorn-picker/static/js/main.35d0e5bd.chunk.js.map",
+    "main.css": "/popcorn-picker/static/css/main.d0332023.chunk.css",
+    "main.js": "/popcorn-picker/static/js/main.bb5e29ab.chunk.js",
+    "main.js.map": "/popcorn-picker/static/js/main.bb5e29ab.chunk.js.map",
     "runtime-main.js": "/popcorn-picker/static/js/runtime-main.57b3edf3.js",
     "runtime-main.js.map": "/popcorn-picker/static/js/runtime-main.57b3edf3.js.map",
     "static/css/2.de424728.chunk.css": "/popcorn-picker/static/css/2.de424728.chunk.css",
-    "static/js/2.8a6ae564.chunk.js": "/popcorn-picker/static/js/2.8a6ae564.chunk.js",
-    "static/js/2.8a6ae564.chunk.js.map": "/popcorn-picker/static/js/2.8a6ae564.chunk.js.map",
+    "static/js/2.3beb8c73.chunk.js": "/popcorn-picker/static/js/2.3beb8c73.chunk.js",
+    "static/js/2.3beb8c73.chunk.js.map": "/popcorn-picker/static/js/2.3beb8c73.chunk.js.map",
     "index.html": "/popcorn-picker/index.html",
-    "precache-manifest.5de94685e3997515932f3b72f4a66b8e.js": "/popcorn-picker/precache-manifest.5de94685e3997515932f3b72f4a66b8e.js",
+    "precache-manifest.e8c6a1e2f26604c19fd7dd6b9134cdf0.js": "/popcorn-picker/precache-manifest.e8c6a1e2f26604c19fd7dd6b9134cdf0.js",
     "service-worker.js": "/popcorn-picker/service-worker.js",
     "static/css/2.de424728.chunk.css.map": "/popcorn-picker/static/css/2.de424728.chunk.css.map",
-    "static/css/main.e233b2e0.chunk.css.map": "/popcorn-picker/static/css/main.e233b2e0.chunk.css.map",
-    "static/js/2.8a6ae564.chunk.js.LICENSE.txt": "/popcorn-picker/static/js/2.8a6ae564.chunk.js.LICENSE.txt",
+    "static/css/main.d0332023.chunk.css.map": "/popcorn-picker/static/css/main.d0332023.chunk.css.map",
+    "static/js/2.3beb8c73.chunk.js.LICENSE.txt": "/popcorn-picker/static/js/2.3beb8c73.chunk.js.LICENSE.txt",
+    "static/media/3d-glasses.svg": "/popcorn-picker/static/media/3d-glasses.ba14264a.svg",
+    "static/media/arrow.svg": "/popcorn-picker/static/media/arrow.c84ad4df.svg",
     "static/media/App.css": "/popcorn-picker/static/media/bg.842800a6.jpg",
     "static/media/popcorn-picker.png": "/popcorn-picker/static/media/popcorn-picker.c1188645.png"
   },
   "entrypoints": [
     "static/js/runtime-main.57b3edf3.js",
     "static/css/2.de424728.chunk.css",
-    "static/js/2.8a6ae564.chunk.js",
-    "static/css/main.e233b2e0.chunk.css",
-    "static/js/main.35d0e5bd.chunk.js"
+    "static/js/2.3beb8c73.chunk.js",
+    "static/css/main.d0332023.chunk.css",
+    "static/js/main.bb5e29ab.chunk.js"
   ]
 }
