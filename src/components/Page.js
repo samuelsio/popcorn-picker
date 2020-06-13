@@ -19,6 +19,7 @@ export default class Search extends Component {
                 </Row>
 
                 <Formstepper />
+                <a href="https://github.com/samuelsio" target="_blank" rel="noopener noreferrer" className="author"><span class="author-avatar"></span>by <strong>@samuelsio</strong></a>
             </>
         )
     }
