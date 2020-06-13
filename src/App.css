@@ -182,6 +182,10 @@
     order: 2;
 }
 
+.App .btn-back {
+    background: #d9d9d9;
+}
+
 .btn-back img {
     transform: rotate(180deg);
 }

@@ -46,7 +46,7 @@ export default class Step3 extends Component {
                     </Form.Group>
                 <div class="d-flex flex-grow-1 justify-content-between">
                         <Button onClick={ this.continue } variant="primary" className="btn btn-next px-5">Get results <img src={arrow} alt="" width="9" height="13" /></Button>    
-                        <Button onClick={this.back} variant="primary" className="btn btn-back float-left px-5"><img src={arrow} alt="" width="9" height="13" /> Back</Button>
+                        <Button onClick={this.back} variant="primary" className="btn btn-back float-left px-4 px-sm-5"><img src={arrow} alt="" width="9" height="13" /> Back</Button>
                     </div>
                 </Jumbotron>
             </>
