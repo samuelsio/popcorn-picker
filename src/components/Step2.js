@@ -4,6 +4,7 @@ import { providerData } from './data/searchData';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import arrow from '../images/arrow.svg';
 
 export default class Step2 extends Component {
 
@@ -35,7 +36,7 @@ export default class Step2 extends Component {
             <>
 
                 <Jumbotron className="step2" style={{ borderTopLeftRadius: 0, borderTopRightRadius: 0 }}>
-                    <h3>What are you subscribed to?</h3>
+                    <h1 class="section-heading">What are you subscribed to?</h1>
                     
                     <Row className="mb-5">
                         {providerData.map(platform => (
@@ -62,8 +63,8 @@ export default class Step2 extends Component {
                     </Row>
                     
                     <div class="d-flex flex-grow-1 justify-content-between">
-                        <Button onClick={ this.continue } variant="primary" className="btn btn-next px-5">Next &rsaquo;</Button>    
-                        <Button onClick={this.back} variant="primary" className="btn btn-back float-left px-5">&lsaquo; Back</Button>
+                        <Button onClick={ this.continue } variant="primary" className="btn btn-next px-5">Next <img src={arrow} alt="" width="9" height="13" /></Button>    
+                        <Button onClick={this.back} variant="primary" className="btn btn-back float-left px-5"><img src={arrow} alt="" width="9" height="13" /> Back</Button>
                     </div>
                 </Jumbotron>
             </>

@@ -509,28 +509,6 @@ export const providerData = [
     }
   },
   {
-    "id": 68,
-    "technical_name": "microsoft",
-    "short_name": "msf",
-    "clear_name": "Microsoft Store",
-    "priority": 5,
-    "display_priority": 26,
-    "monetization_types": [
-      "buy",
-      "rent"
-    ],
-    "icon_url": "/icon/820542/{profile}",
-    "slug": "microsoft-store",
-    "data": {
-      "deeplink_data": [],
-      "packages": {
-        "android_tv": "",
-        "fire_tv": "",
-        "tvos": ""
-      }
-    }
-  },
-  {
     "id": 350,
     "technical_name": "appletvplus",
     "short_name": "atp",
@@ -581,41 +559,6 @@ export const providerData = [
       "packages": {
         "android_tv": "",
         "fire_tv": "",
-        "tvos": ""
-      }
-    }
-  },
-  {
-    "id": 192,
-    "technical_name": "youtube",
-    "short_name": "yot",
-    "clear_name": "YouTube",
-    "priority": 5,
-    "display_priority": 25,
-    "monetization_types": [
-      "buy",
-      "rent"
-    ],
-    "icon_url": "/icon/59562423/{profile}",
-    "slug": "youtube",
-    "data": {
-      "deeplink_data": [
-        {
-          "scheme": "https",
-          "packages": [
-            "com.google.android.youtube.tv"
-          ],
-          "platforms": [
-            "android_tv",
-            "fire_tv"
-          ],
-          "path_template": "www.youtube.com/watch?v=%DEEPLINK%",
-          "extras": null
-        }
-      ],
-      "packages": {
-        "android_tv": "com.google.android.youtube.tv",
-        "fire_tv": "com.google.android.youtube.tv",
         "tvos": ""
       }
     }

@@ -13,13 +13,8 @@ export default class Step4 extends Component {
         return (
             <>
 
-                <Jumbotron style={{ borderTopLeftRadius: 0, borderTopRightRadius: 0 }}>
-                    <h1>Your results</h1>
-                    
-                    <p>Here's a list we've made for you</p>
-                    
-                <Results request={this.props.request} />
-                    
+                <Jumbotron style={{ borderTopLeftRadius: 0, borderTopRightRadius: 0 }}>  
+                    <Results request={this.props.request} reset={this.props.reset} />    
                 </Jumbotron>
             </>
         )

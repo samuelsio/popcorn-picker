@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import {Card, Spinner, Row, Col} from 'react-bootstrap';
+import { Card, Row, Col } from 'react-bootstrap'
+import spinner from '../images/3d-glasses.svg';
 
 export default class Results extends Component {
 
@@ -40,8 +41,8 @@ export default class Results extends Component {
         if (!isLoaded) {
             return (
                 <>
-                    <div className="mt-5" style={{ textAlign: 'center' }}>
-                        <Spinner animation="border" variant="primary" />
+                    <div className="my-5" style={{ textAlign: 'center' }}>
+                        <img src={spinner} class="spinner" alt="Popcorn Picker" />
                         <h2>Loading...</h2>
                     </div>
                 </>
@@ -52,6 +53,8 @@ export default class Results extends Component {
         else {
             return (
                 <>
+                    <button className="edit-options" onClick={ this.props.reset }>Edit options</button> 
+                    <h1 class="section-heading">Here's a list we've made for you</h1>
                     <Row> 
                         {items[0].items.map(item => (
                             <>  

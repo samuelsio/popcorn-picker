@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Row, Col, Card, Button, Jumbotron } from 'react-bootstrap';
+import arrow from '../images/arrow.svg';
 
 export default class Step2 extends Component {
 
@@ -22,7 +23,7 @@ export default class Step2 extends Component {
             <>
 
                 <Jumbotron className="step1" style={{ borderTopLeftRadius: 0, borderTopRightRadius: 0 }}>
-                <h3 className="mb-3">What are you looking for?</h3>
+                <h1 class="section-heading">What are you looking for?</h1>
                     
                     <Row className="mb-5">
                         <Col xs={12} className="d-flex flex-row justify-content-center text-center">
@@ -47,7 +48,7 @@ export default class Step2 extends Component {
                         </Col>
                     </Row>
                 <div class="d-flex flex-grow-1 justify-content-between">
-                        <Button onClick={ this.continue } variant="primary" className="btn btn-next px-5 ml-auto">Start &rsaquo;</Button>
+                        <Button onClick={ this.continue } variant="primary" className="btn btn-next px-5 ml-auto">Start <img src={arrow} alt="" width="9" height="13" /></Button>
                 </div>
                 </Jumbotron>
             </>

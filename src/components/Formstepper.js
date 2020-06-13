@@ -36,6 +36,12 @@ export default class Formstepper extends Component {
         });
     }
 
+    resetStep = () => {
+        this.setState({
+            currentStep: 1,
+        });
+    }
+
     setContType = (input) => {
         this.setState({ contentType: input})
     }
@@ -101,7 +107,7 @@ export default class Formstepper extends Component {
                 return (
                     <div>
                     <ProgressBar style={{ marginTop: "2em", borderBottomLeftRadius: 0, borderBottomRightRadius: 0, backgroundColor: "#d9dde1" }} now={this.state.currentStep / this.state.totalSteps * 100} />  
-                    <Step4 nextStep={this.nextStep} handleChange={this.handleChange} request={this.getRequest} values={values} prevStep={this.prevStep} providers={this.state.providers} genres={this.state.genres} />
+                        <Step4 nextStep={this.nextStep} handleChange={this.handleChange} request={this.getRequest} values={values} prevStep={this.prevStep} reset={this.resetStep} providers={this.state.providers} genres={this.state.genres} />
                     </div>
                 )
             //no default
