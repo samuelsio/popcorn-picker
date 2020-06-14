@@ -13,8 +13,9 @@ export default class CreatableMulti extends Component {
         isMulti
         options={this.props.options}
         onChange={this.props.handleInputChange}
-          value={this.props.value}
-          placeholder={this.props.placeholder}
+        value={this.props.value}
+        placeholder={this.props.placeholder}
+        classNamePrefix="genre-input"
         />
       </>
     );
