@@ -43,7 +43,7 @@ export default class Results extends Component {
                 <>
                     <div className="my-5" style={{ textAlign: 'center' }}>
                         <img src={spinner} class="spinner" alt="Popcorn Picker" />
-                        <h2>Loading...</h2>
+                        <h2 style={{marginTop: "-1em"}}>Loading...</h2>
                     </div>
                 </>
 

@@ -36,7 +36,7 @@ export default class Step2 extends Component {
             <>
 
                 <Jumbotron className="step2" style={{ borderTopLeftRadius: 0, borderTopRightRadius: 0 }}>
-                    <h1 class="section-heading">What are you subscribed to?</h1>
+                    <h1 class="section-heading">Which apps do you use?</h1>
                     
                     <Row className="mb-5">
                         {providerData.map(platform => (
