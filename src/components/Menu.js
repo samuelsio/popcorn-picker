@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Nav, Container } from 'react-bootstrap';
-import popcornPic from '../images/popcorn-picker.png';
+import popcornPic from '../images/popcorn.png';
 
 
 export default class Menu extends Component {
