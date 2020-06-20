@@ -41,6 +41,23 @@ code {
 	min-height: 100vh;
 	padding-bottom: 15px;
 
+	.hero {
+		color: #fff;
+		margin: 0.6em 0;
+		font-size: calc(1.2em + 2.5vw);
+		font-weight: 600;
+		line-height: 1em;
+		align-self: center;
+
+		@media (min-width: 992px) {
+			font-size: 44px;
+		}
+	}
+
+	.container {
+		max-width: 992px;
+	}
+
 	.aside img {
 		max-height: 200px;
 	}

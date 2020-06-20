@@ -29,7 +29,7 @@ export default class Step2 extends Component {
                         <Col xs={12} className="d-flex flex-row justify-content-center text-center">
                             <Card
                                 onClick={() => { this.props.setContType("movie") }}
-                                className={"btn col col-lg-3 justify-content-center " + (this.props.contentType.includes("movie") ? "selected" : "")}
+                                className={"btn col col-sm-5 col-md-4 col-lg-3 justify-content-center " + (this.props.contentType.includes("movie") ? "selected" : "")}
                                 onKeyPress={(e) => { if (e.charCode === 32) { e.preventDefault(); this.props.setContType("movie") }}}
                                 style={{ cursor: "pointer" }}
                                 tabIndex={0}
@@ -38,7 +38,7 @@ export default class Step2 extends Component {
                             </Card>
                             <Card
                                 onClick={() => { this.props.setContType("show") }}
-                                className={"btn col col-lg-3 justify-content-center " + (this.props.contentType.includes("show") ? "selected" : "")}
+                                className={"btn col col-sm-5 col-md-4 col-lg-3 justify-content-center " + (this.props.contentType.includes("show") ? "selected" : "")}
                                 onKeyPress={(e) => { if (e.charCode === 32) { e.preventDefault(); this.props.setContType("show") }}}
                                 style={{ cursor: "pointer" }}
                                 tabIndex={0}
