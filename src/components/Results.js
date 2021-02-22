@@ -54,7 +54,7 @@ export default class Results extends Component {
             return (
                 <>
                     <button className="edit-options" onClick={ this.props.reset }>Edit options</button> 
-                    <h1 class="section-heading">Here's a list we've made for you</h1>
+                    <h1 class="section-heading">Here's a list made for you</h1>
                     <Row> 
                         {items[0].items.map(item => (
                             <>  
